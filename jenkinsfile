@@ -5,7 +5,6 @@ pipeline {
         stage('clone') {
             steps {
                 echo 'cloning the application from Github'
-                git branch: 'main', url: 'https://github.com/hamzamaan/Hello-World-Jenkins-App.git'
             }
         }
         stage('build') {
